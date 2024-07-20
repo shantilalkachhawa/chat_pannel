@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --primary-color: #743ccd;
+    --secondry-color: #c9fe43;
+    --border-radius: clamp(0.38rem, calc(0.34rem + 0.18vw), 0.5rem);
+    --shadow-color: hsl(210, 22%, 91%);
+    --black-color: #001233;
+    --light-pmr-color: #68dff7;
+    --border-color: #a2b1c3;
+}
+.primary-color {
+    color: var(--primary-color);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+.shadow {
+    box-shadow: 0 0 0 1px var(--shadow-color);
+}
+.primary-btn {
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    color: white;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    font-weight: 700;
+    display: inline-block;
+    transition-duration: 0.2s;
+}
+.primary-btn:hover {
+    filter: contrast(0.8);
+}
+.secondry-btn {
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    color: var(--black-color);
+    background-color: var(--secondry-color);
+    outline: none;
+    border: none;
+    font-weight: 700;
+    display: inline-block;
+    transition-duration: 0.2s;
+}
+.secondry-btn:hover {
+    filter: contrast(0.8);
+    color: white;
+}
+.fw-7 {
+    font-weight: 700;
+}
+.fw-6 {
+    font-weight: 600;
+}
+.fw-5 {
+    font-weight: 500;
+}
+.fw-4 {
+    font-weight: 400;
+}
+.pointer {
+    cursor: pointer;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: none;
+    outline: 0;
+    /* box-shadow: 0 0 0 .25rem rgba(13,110,253,.25); */
+    box-shadow: none !important;
+}
+.row {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-10 {
+    font-size: 10px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.pointer {
+    cursor: pointer;
+}
